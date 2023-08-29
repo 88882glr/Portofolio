@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    position: relative;
+    display: flex;
+    height: 80vh;
+    background-image: url(../media/background5.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+navbar {
+    background: transparent;
+    box-shadow: none;
+}
+
+#wave {
+    position: absolute;
+    bottom: -140px;
+    height: 300px;
+    width: 100%;
+}
+
+mainbox {
+    display: flex;
+    justify-content: center;
+}
+
+profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 800px;
+    width: 65vw;
+}
+
+#profielFoto {
+    height: 400px;
+}
+
+#introductie {
+    width: 40vw;
+}
