@@ -22,8 +22,8 @@
         <header>
             <navbar>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Projecten</a></li>
+                    <li><a href="#" id="navHome">Home</a></li>
+                    <li><a href="./pages/projecten.php">Projecten</a></li>
                     <li><a href="#">About/CV</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>

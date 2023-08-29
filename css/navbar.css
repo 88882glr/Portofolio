@@ -1,27 +1,31 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 navbar {
     display: flex;
     justify-content: center;
-    height: 50px;
-    width: 100vw;
-    background-color: #1f2232;
-    box-shadow: 0px 2px 15px 1px rgba(0, 0, 0, 0.75)
+    align-items: center;
+    height: 90px;
+    background-color: white;
 }
 
 navbar ul {
-    width: 90vw;
+    width: 1200px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 0;
 }
 
 ul li {
     list-style: none;
     transition: 0.1s;
+    position: relative;
 }
 
 ul li a {
     text-decoration: none;
-    color: white;
+    color: #c6c7d3;
     font-size: 17px;
     font-weight: 300;
     letter-spacing: 1px;
@@ -31,4 +35,14 @@ ul li:hover {
     transform: scale(110%);
     font-weight: 400;
     transition: 0.4s;
+}
+
+hr {
+    position: absolute;
+    top: 15px;
+    height: 5px;
+    width: 33px;
+    background-color: #4d9bff;
+    border-radius: 5px;
+    border: none;
 }

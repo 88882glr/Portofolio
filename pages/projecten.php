@@ -8,30 +8,36 @@
     <title>Projecten</title>
 
     <link rel="icon" type="image/x-icon" href="../media/profile.png">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="../css/projecten.css">
 
-    <script src="./js/index.js"></script>
+    <script src="../js/projecten.js"></script>
 </head>
 
 <body>
-    <page>
-        <navbar>
-            <div class="nav">Home</div>
-            <div class="nav">Projecten</div>
-            <div class="nav">About/CV</div>
-            <div class="nav">Contact</div>
-        </navbar>
-        <mainBox>
-            <img src="./media/profile.png" alt="Profielfoto">
-            <div id="introductie">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga iure earum ab possimus assumenda
-                exercitationem dolores nobis neque. Officia quisquam ea officiis harum velit quia? Nobis voluptatum aut
-                nam quaerat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat vitae nisi autem, soluta
-                harum necessitatibus perferendis sint odit ratione ipsam quidem repellat et sed esse. Quas sit atque
-                rerum quod.
+    <?php include 'navbar.php' ?>
+    <mainBox>
+        <div id="title">Mijn projecten</div>
+        <div id="projecten">
+            <div class="project">
+                <img src="../media/test.png" alt="Projectfoto" class="projectImg">
+                <div class="projectTitle">Show your zoo</div>
+                <div class="projectDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ab reiciendis,
+                    sit
+                    in molestias odio officia dicta blanditiis, debitis facere quos. Laborum iusto autem non ipsa
+                    excepturi repellendus aspernatur sed.</div>
+                <a href="" class="goToProject"><img src="../media/arrow-right.svg" alt="arrow" id="arrow"></a>
             </div>
-        </mainBox>
-    </page>
+            <div class="project">
+                <img src="../media/test.png" alt="Projectfoto" class="projectImg">
+                <div class="projectTitle">Show your zoo</div>
+                <div class="projectDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ab reiciendis,
+                    sit
+                    in molestias odio officia dicta blanditiis, debitis facere quos. Laborum iusto autem non ipsa
+                    excepturi repellendus aspernatur sed.</div>
+                <a href="" class="goToProject"><img src="../media/arrow-right.svg" alt="arrow" id="arrow"></a>
+            </div>
+        </div>
+    </mainBox>
 </body>
 
 </html>

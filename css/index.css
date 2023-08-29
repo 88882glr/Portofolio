@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
 }
 
 header {
@@ -15,6 +14,11 @@ header {
 navbar {
     background: transparent;
     box-shadow: none;
+}
+
+#navHome {
+    font-size: 17px;
+    font-weight: 300;
 }
 
 #wave {
@@ -33,7 +37,7 @@ profile {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 800px;
+    height: 850px;
     width: 65vw;
 }
 

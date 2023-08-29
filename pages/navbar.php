@@ -8,10 +8,12 @@
 <body>
     <navbar>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Projecten</a></li>
-            <li><a href="#">About/CV</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="../index.php" id="navHome">Home</a></li>
+            <li><a href="#" id="navProjecten">Projecten</a>
+                <hr>
+            </li>
+            <li><a href="#" id="navAbout">About/CV</a></li>
+            <li><a href="#" id="navContact">Contact</a></li>
         </ul>
     </navbar>
 </body>

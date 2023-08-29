@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    background-color: #f6f7fc;
+    overflow-x: hidden;
+    color: #424242;
+
+}
+
+#navProjecten {
+    color: #424242;
+}
+
+mainBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    height: fit-content;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+#title {
+    font-size: 40px;
+    margin: 90px 0 80px 0;
+    justify-self: flex-start;
+}
+
+#projecten {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+.project {
+    display: inline-block;
+    position: relative;
+    height: 300px;
+    width: 370px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0px 0px 16px -11px rgba(0, 0, 0, 0.30);
+}
+
+.line {
+    height: 20px;
+    border-radius: 25px 25px 0 0;
+    width: 100%;
+    background-color: #e548a1;
+}
+
+.projectImg {
+    height: 80px;
+    width: 80px;
+    margin: 10px 0 0 10px;
+    border-radius: 50%;
+}
+
+.projectTitle {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 15px;
+    font-weight: 550;
+    margin: 22px 0 0 87px;
+}
+
+.projectDesc {
+    width: 340px;
+    margin: 10px 0 10px 25px;
+    color: #828282;
+}
+
+.goToProject {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+}
+
+#arrow {
+    opacity: 0.6;
+}
+
+@media only screen and (max-width:1215px) {
+    #projecten {
+        justify-content: center;
+
+    }
+}
