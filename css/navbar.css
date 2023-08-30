@@ -36,13 +36,3 @@ ul li:hover {
     font-weight: 400;
     transition: 0.4s;
 }
-
-hr {
-    position: absolute;
-    top: 15px;
-    height: 5px;
-    width: 33px;
-    background-color: #4d9bff;
-    border-radius: 5px;
-    border: none;
-}

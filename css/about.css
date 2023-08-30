@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    background-color: #f6f7fc;
+    /* overflow-x: hidden; */
+    color: #424242;
+}
+
+#hrAbout {
+    position: absolute;
+    top: 15px;
+    height: 5px;
+    width: 33px;
+    background-color: #47af7d;
+    border-radius: 5px;
+    border: none;
+}
+
+#hrHome,
+#hrProjecten,
+#hrContact {
+    display: none;
+}
+
+mainBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    height: fit-content;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+topBox {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+}
+
+leftBox {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    color: #2d2d2d;
+}
+
+rightBox {
+    display: flex;
+    width: 400px;
+}
+
+#name {
+    margin: 10px 0 10px 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#studie {
+    margin: 0 0 10px 0;
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: #828282;
+}
+
+#myDesc {
+    width: 500px;
+    margin: 10px 0 20px 0;
+    color: #828282;
+}
+
+button {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 15px;
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+    background-color: #47af7d;
+    font-weight: 600;
+}
+
+#downloadImg {
+    position: absolute;
+    top: 11px;
+    left: 18px;
+    height: 16px;
+    width: 16px;
+    margin-right: 6px;
+}
+
+rightBox img {
+    height: 300px;
+    width: 400px;
+}
+
+bottomBox {
+    display: flex;
+    margin-top: 70px;
+    flex-direction: column;
+}
+
+#title {
+    margin: 10px 0 10px 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #2d2d2d;
+}
+
+#expDesc {
+    width: 100%;
+    max-width: 1060px;
+}
+
+#myExperiences {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    max-width: 1200px;
+    gap: 20px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.experience {
+    display: flex;
+    height: 300px;
+    width: 370px;
+    flex-direction: column;
+}
+
+.experienceImg {
+    height: 40px;
+    width: 40px;
+    margin-bottom: 12px;
+}
+
+.experienceName {
+    margin-bottom: 6px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #2d2d2d;
+}
+
+#experienceDetail {
+    width: 300px;
+}

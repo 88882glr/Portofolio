@@ -24,7 +24,7 @@
                 <ul>
                     <li><a href="#" id="navHome">Home</a></li>
                     <li><a href="./pages/projecten.php">Projecten</a></li>
-                    <li><a href="#">About/CV</a></li>
+                    <li><a href="./pages/about.php">About/CV</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </navbar>
