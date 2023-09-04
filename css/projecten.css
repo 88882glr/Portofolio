@@ -3,26 +3,16 @@ body {
     background-color: #f6f7fc;
     overflow-x: hidden;
     color: #424242;
+    font-family: 'Poppins', sans-serif;
+}
+
+#navProjecten a {
+    color: #4d9bff;
 }
 
 #hrProjecten {
-    position: absolute;
-    top: 15px;
-    height: 5px;
-    width: 33px;
     background-color: #4d9bff;
-    border-radius: 5px;
-    border: none;
-}
-
-#hrHome,
-#hrAbout,
-#hrContact {
-    display: none;
-}
-
-#navProjecten {
-    color: #424242;
+    width: 100%;
 }
 
 mainBox {
@@ -36,7 +26,7 @@ mainBox {
 }
 
 #title {
-    font-size: 40px;
+    font-size: 35px;
     margin: 100px 0 80px 0;
     justify-self: flex-start;
 }

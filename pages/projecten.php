@@ -7,8 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projecten</title>
 
+    <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/projecten.css">
     <link rel="icon" type="image/x-icon" href="../media/cv.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
 
     <script src="../js/projecten.js"></script>
 </head>
@@ -31,9 +35,22 @@
         $projectCollab = $row['collaborators'];
     }
     ?>
-    <?php
-    require_once 'navbar.php';
-    ?>
+    <navbar>
+        <ul>
+            <li id="navHome"><a href="../index.php">Home</a>
+                <hr id="hrHome">
+            </li>
+            <li id="navProjecten"><a href="./projecten.php">Projecten</a>
+                <hr id="hrProjecten">
+            </li>
+            <li id="navAbout"><a href="./about.php">About/CV</a>
+                <hr id="hrAbout">
+            </li>
+            <li id="navContact"><a href="./contact.php">Contact</a>
+                <hr id="hrContact">
+            </li>
+        </ul>
+    </navbar>
     <mainBox>
         <div id="title">Mijn projecten</div>
         <div id="projecten">

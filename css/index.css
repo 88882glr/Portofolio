@@ -2,29 +2,12 @@ body {
     margin: 0;
 }
 
-header {
-    position: relative;
-    display: flex;
-    height: 80vh;
-    background-image: url(../media/background5.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
+#navHome a {
+    color: #ff8080bd;
 }
 
-navbar {
-    background: transparent;
-    box-shadow: none;
-}
-
-#navHome {
-    font-size: 17px;
-    font-weight: 300;
-}
-
-#wave {
-    position: absolute;
-    bottom: -140px;
-    height: 300px;
+#hrHome {
+    background-color: #ff8080bd;
     width: 100%;
 }
 

@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    background-color: #f6f7fc;
+    color: #424242;
+    font-family: 'Poppins', sans-serif;
+}
+
+#navContact a {
+    color: #6c55e1bd;
+}
+
+#hrContact {
+    background-color: #6c55e1bd;
+    width: 100%;
+}
+
+mainBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    height: fit-content;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+contactBox {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 465px;
+    width: 100%;
+    max-width: 440px;
+    margin-top: 100px;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #424242;
+}
+
+.text {
+    height: 40px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #f7f6fd;
+    color: #828282;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+#bericht {
+    height: 100px;
+    resize: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #f7f6fd;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: 2px solid #6c55e1bd;
+}
+
+#verstuur {
+    height: 40px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+    background-color: #6c55e1bd;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#verstuur:hover {
+    background-color: #735beebd;
+}
+
+
+@media only screen and (max-width: 550px) {
+    mainbox {
+        width: 75%;
+    }
+}

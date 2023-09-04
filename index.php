@@ -12,24 +12,33 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
 
     <script src="./js/index.js"></script>
 </head>
 
 <body>
     <page>
-        <header>
-            <navbar>
-                <ul>
-                    <li><a href="#" id="navHome">Home</a></li>
-                    <li><a href="./pages/projecten.php">Projecten</a></li>
-                    <li><a href="./pages/about.php">About/CV</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </navbar>
-            <img src="./media/wave.png" alt="wave" id="wave">
-        </header>
+        <navbar>
+            <ul>
+                <li id="navHome"><a href="index.php">Home</a>
+                    <hr id="hrHome">
+                </li>
+                <li id="navProjecten"><a href="./pages/projecten.php">Projecten</a>
+                    <hr id="hrProjecten">
+                </li>
+                <li id="navAbout"><a href="./pages/about.php">About/CV</a>
+                    <hr id="hrAbout">
+                </li>
+                <li id="navContact"><a href="./pages/contact.php">Contact</a>
+                    <hr id="hrContact">
+                </li>
+            </ul>
+        </navbar>
         <mainBox>
             <profile>
                 <img src="./media/profile.png" alt="profielFoto" id="profielFoto">

@@ -1,13 +1,10 @@
-body {
-    font-family: 'Open Sans', sans-serif;
-}
-
 navbar {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90px;
+    height: 80px;
     background-color: white;
+    font-family: 'Poppins', sans-serif;
 }
 
 navbar ul {
@@ -19,20 +16,75 @@ navbar ul {
 
 ul li {
     list-style: none;
-    transition: 0.1s;
     position: relative;
 }
 
 ul li a {
     text-decoration: none;
-    color: #c6c7d3;
+    color: #b0b0ba;
     font-size: 17px;
     font-weight: 300;
     letter-spacing: 1px;
 }
 
-ul li:hover {
-    transform: scale(110%);
-    font-weight: 400;
-    transition: 0.4s;
+ul li a::before,
+ul li a::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    cursor: pointer;
+}
+
+hr {
+    position: absolute;
+    top: 16px;
+    height: 4px;
+    width: 20%;
+    border-radius: 5px;
+    border: none;
+    transition: width 0.2s linear, background-color 0.2s linear;
+    float: left;
+}
+
+#navHome:hover>#hrHome {
+    background-color: #ff8080bd;
+    width: 100%;
+    float: right;
+}
+
+#navHome:hover>a {
+    color: #ff8080;
+}
+
+#navProjecten:hover>#hrProjecten {
+    background-color: #4d9bffbd;
+    width: 100%;
+    float: right;
+}
+
+#navProjecten:hover>a {
+    color: #4d9bffbd;
+}
+
+#navAbout:hover>#hrAbout {
+    background-color: #47af7dbd;
+    width: 100%;
+    float: right;
+}
+
+#navAbout:hover>a {
+    color: #47af7dbd;
+}
+
+#navContact:hover>#hrContact {
+    background-color: #6c55e1bd;
+    width: 100%;
+    float: right;
+}
+
+#navContact:hover>a {
+    color: #6c55e1bd;
 }
