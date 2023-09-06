@@ -89,10 +89,10 @@ button:hover {
     transform: scale(99%);
 }
 
-rightBox img {
-    height: 270px;
-    width: 400px;
-    margin-top: 10px;
+rightBox iframe {
+    height: 250px;
+    width: 100%;
+    margin-top: 25px;
 }
 
 bottomBox {

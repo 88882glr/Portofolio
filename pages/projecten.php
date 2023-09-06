@@ -17,7 +17,7 @@
     <script src="../js/projecten.js"></script>
 </head>
 
-<body>
+<body onload="projectenAnimatie();">
     <?php
     require 'db.php';
 
@@ -59,20 +59,21 @@
         <div id="projecten">
             <?php foreach ($rows as $row) {
                 $img = base64_encode($row['img']); ?>
-                <div class="project">
-                    <img src="data:image/jpeg;base64,<?php echo $img; ?>" alt="ProjectImg" class="projectImg">
+                <project>
+                    <img loading="lazy" src="data:image/jpeg;base64,<?php echo $img; ?>" alt="ProjectImg"
+                        class="projectImg">
                     <div class="projectTitle">
                         <?php echo $row["title"]; ?>
                     </div>
                     <div class="projectDesc">
                         <?php echo $row["description"]; ?>
                     </div>
-                    <a href="<?php echo $row["link"]; ?>" class="goToProject"><img src="../media/arrow-right.svg"
-                            alt="arrow" id="arrow"></a>
+                    <a href="<?php echo $row["link"]; ?>" class="goToProject"><img src="../media/arrowBlack.svg" alt="arrow"
+                            id="arrowBlack"><img src="../media/arrowBlue.svg" alt="arrow" id="arrowBlue"></a>
                     <div class="collab">
                         <?php echo $row["collaborators"]; ?> Collaborators
                     </div>
-                </div>
+                </project>
             <?php } ?>
         </div>
 

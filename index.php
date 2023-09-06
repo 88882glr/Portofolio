@@ -41,18 +41,23 @@
         </navbar>
         <mainBox>
             <profile>
-                <img src="./media/profile.png" alt="profielFoto" id="profielFoto">
-                <div id="introductie">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga iure earum ab possimus assumenda
-                    exercitationem dolores nobis neque. Officia quisquam ea officiis harum velit quia? Nobis voluptatum
-                    aut
-                    nam quaerat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat vitae nisi autem,
-                    soluta
-                    harum necessitatibus perferendis sint odit ratione ipsam quidem repellat et sed esse. Quas sit atque
-                    rerum quod.
-                </div>
-            </profile>
+                <leftbox>
+                    <div id="title">Tom van der Hoeven</div>
+                    <div id="introductie">
+                        Hoi, ik ben Tom, een 21-jarige student Software Development aan het <a
+                            href="https://www.glr.nl/" class="textLink">Grafisch Lyceum Rotterdam</a>.
+                        Mijn passie voor programmeren en het verkennen van nieuwe programmeertalen is wat me blij maakt.
 
+                        Welkom op mijn portfolio, waar ik mijn projecten en softwareontwikkeling met u deel. <a
+                            href="./pages/projecten.php" class="textLink">Hier</a> kun
+                        je mijn werk en mijn groei in de software developer branche volgen.
+                    </div>
+                </leftbox>
+                <rightbox>
+                    <img src="./media/ik.png" alt="profielFoto" id="profielFoto">
+                    <div id="border"></div>
+                </rightbox>
+            </profile>
         </mainBox>
     </page>
 </body>

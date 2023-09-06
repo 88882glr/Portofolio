@@ -55,7 +55,10 @@
 
             </leftBox>
             <rightBox>
-                <img src="../media/profile.png" alt="">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/rfscVS0vtbw?si=YZC8Mr7a0FSEWFLl"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
             </rightBox>
         </topBox>
         <bottomBox>

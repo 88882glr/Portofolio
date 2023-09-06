@@ -3,6 +3,7 @@ body {
     background-color: #f6f7fc;
     color: #424242;
     font-family: 'Poppins', sans-serif;
+    overflow: hidden;
 }
 
 #navContact a {
@@ -29,7 +30,7 @@ contactBox {
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 465px;
+    height: 480px;
     width: 100%;
     max-width: 500px;
     margin-top: 100px;
@@ -95,11 +96,4 @@ button:focus {
 
 #verstuur:hover {
     background-color: #735beebd;
-}
-
-
-@media only screen and (max-width: 550px) {
-    mainbox {
-        width: 75%;
-    }
 }
