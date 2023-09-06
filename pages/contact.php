@@ -45,7 +45,7 @@
             <form action="db.php" method="post">
                 <input type="text" name="voornaam" id="voornaam" class="text" placeholder="Voornaam" required>
                 <input type="text" name="achternaam" id="achternaam" class="text" placeholder="Achternaam" required>
-                <input type="email" name="email" id="email" class="text" placeholder="Email">
+                <input type="email" name="email" id="email" class="text" placeholder="Email" required>
                 <input type="tel" name="tel" id="tel" class="text" placeholder="Telefoonnummer *optioneel*"
                     maxlength="15">
                 <input type="text" name="bedrijf" id="bedrijf" class="text" placeholder="Bedrijf *optioneel*">

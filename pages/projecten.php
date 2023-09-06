@@ -53,6 +53,9 @@
     </navbar>
     <mainBox>
         <div id="title">Mijn projecten</div>
+        <div id="subTitle">School projecten</div>
+        <div id="schoolProjecten">Voor mijn opleiding op het Grafisch Lyceum Rotterdam heb ik een aantal opdrachten
+            gemaakt die mij hebben geholpen met het leren van programmeertalen</div>
         <div id="projecten">
             <?php foreach ($rows as $row) {
                 $img = base64_encode($row['img']); ?>

@@ -43,8 +43,8 @@ rightBox {
 }
 
 #name {
-    margin: 10px 0 10px 0;
-    font-size: 30px;
+    margin: 0 0 10px 0;
+    font-size: 35px;
 }
 
 #studie {
@@ -92,6 +92,7 @@ button:hover {
 rightBox img {
     height: 270px;
     width: 400px;
+    margin-top: 10px;
 }
 
 bottomBox {
