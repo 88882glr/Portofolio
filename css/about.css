@@ -5,16 +5,16 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-#navAbout a {
+#nav-about a {
     color: #47af7dbd;
 }
 
-#hrAbout {
+#hr-about {
     background-color: #47af7dbd;
     width: 100%;
 }
 
-mainBox {
+main-box {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -24,48 +24,48 @@ mainBox {
     transform: translate(-50%);
 }
 
-topBox {
+top-box {
     display: flex;
     flex-direction: row;
     margin-top: 100px;
 }
 
-leftBox {
+left-box {
     display: flex;
     flex-direction: column;
     width: 800px;
 }
 
-rightBox {
+right-box {
     display: flex;
     width: 400px;
     height: 300px;
 }
 
-#name {
+name {
     margin: 0 0 10px 0;
     font-size: 35px;
 }
 
-#studie {
+studie {
     letter-spacing: 1px;
     font-size: 20px;
     color: #828282;
 }
 
-#myDesc {
+my-desc {
     width: 500px;
     margin: 10px 0 20px 0;
     color: #828282;
     line-height: 27px;
 }
 
-.textLink {
+.text-link {
     text-decoration: none;
     color: #47af7dbd;
 }
 
-#downloadButton {
+#download-button {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -89,69 +89,7 @@ button:hover {
     transform: scale(99%);
 }
 
-rightBox iframe {
-    height: 250px;
-    width: 100%;
-    margin-top: 25px;
-}
-
-bottomBox {
-    display: flex;
-    margin-top: 70px;
-    flex-direction: column;
-}
-
-.title {
-    margin: 10px 0 10px 0;
-    font-size: 20px;
-}
-
-#expDesc {
-    width: 100%;
-    max-width: 730px;
-    color: #828282;
-
-}
-
-#myExperiences {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    max-width: 1200px;
-    gap: 20px;
-    margin-top: 150px;
-    margin-bottom: 50px;
-
-}
-
-.experience {
-    display: flex;
-    height: 80px;
-    width: 200px;
-    flex-direction: column;
-}
-
-.experienceImg {
-    height: 40px;
-    width: 40px;
-    margin-bottom: 12px;
-}
-
-.experienceName {
-    margin-bottom: 6px;
-    font-size: 15px;
-    color: #2d2d2d;
-}
-
-.experienceDetail {
-    width: 300px;
-    height: 100px;
-    color: #828282;
-    word-break: break-all;
-}
-
-.downloadAnimation {
+download-animation {
     position: absolute;
     top: 11px;
     left: 18px;
@@ -160,8 +98,82 @@ bottomBox {
     margin-right: 6px;
 }
 
-#titleTalen {
+right-box iframe {
+    height: 250px;
+    width: 100%;
+    margin-top: 25px;
+}
+
+bottom-box {
+    display: flex;
+    margin-top: 70px;
+    flex-direction: column;
+}
+
+heading {
+    margin: 10px 0 10px 0;
+    font-size: 20px;
+}
+
+exp-desc {
+    width: 100%;
+    max-width: 730px;
+    color: #828282;
+
+}
+
+my-experiences {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    max-width: 1200px;
+    gap: 20px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+
+}
+
+experience {
+    display: flex;
+    height: 80px;
+    width: 200px;
+    flex-direction: column;
+    opacity: 0;
+}
+
+.experience-img {
+    height: 100%;
+    max-height: 40px;
+    width: 40px;
+    margin-bottom: 12px;
+}
+
+experience-name {
+    margin-bottom: 6px;
+    font-size: 15px;
+    color: #2d2d2d;
+}
+
+title-talen {
     position: absolute;
-    top: -70px;
+    top: -50px;
     left: 0;
+}
+
+.grey-star,
+.green-star {
+    height: 25px;
+}
+
+@keyframes moveExperience {
+    from {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }

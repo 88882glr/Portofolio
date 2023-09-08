@@ -6,16 +6,16 @@ body {
     overflow: hidden;
 }
 
-#navContact a {
+#nav-contact a {
     color: #6c55e1bd;
 }
 
-#hrContact {
+#hr-contact {
     background-color: #6c55e1bd;
     width: 100%;
 }
 
-mainBox {
+main-box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,7 +26,7 @@ mainBox {
     transform: translate(-50%);
 }
 
-contactBox {
+contact-box {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -40,14 +40,15 @@ contactBox {
 }
 
 form {
+    position: relative;
     display: flex;
     flex-direction: column;
-
+    transition: 0.5s;
 }
 
 #title {
     margin-bottom: 10px;
-    font-weight: 700;
+    font-weight: 500;
     color: #424242;
 }
 
@@ -55,7 +56,7 @@ form {
     height: 40px;
     margin-bottom: 10px;
     border: none;
-    background-color: #f7f6fd;
+    background-color: #f3f3f9;
     color: #828282;
     border-radius: 5px;
     padding-left: 10px;
@@ -66,12 +67,12 @@ form {
     resize: none;
     border: none;
     border-radius: 5px;
-    background-color: #f7f6fd;
+    background-color: #f3f3f9;
 }
 
 label {
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 500;
     margin-bottom: 5px;
 }
 
@@ -96,4 +97,15 @@ button:focus {
 
 #verstuur:hover {
     background-color: #735beebd;
+}
+
+mail-animation {
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    height: 250px;
+    width: 250px;
 }

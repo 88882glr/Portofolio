@@ -32,6 +32,7 @@ if (isset($_POST["verstuur"])) {
     $stmt->bindParam(':bericht', $bericht);
 
     try {
+        sleep(4);
         $stmt->execute();
         header("Location: contact.php");
         exit();

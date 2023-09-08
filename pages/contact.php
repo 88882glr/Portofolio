@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact</title>
 
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/contact.css">
@@ -13,6 +13,9 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800;900&display=swap"
         rel="stylesheet">
+
+    <script src="../js/contact.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.3/lottie_svg.min.js"></script>
 </head>
 
 <body>
@@ -25,24 +28,25 @@
     ?>
     <navbar>
         <ul>
-            <li id="navHome"><a href="../index.php">Home</a>
-                <hr id="hrHome">
+            <li id="nav-home"><a href="../index.php">Home</a>
+                <hr id="hr-home">
             </li>
-            <li id="navProjecten"><a href="./projecten.php">Projecten</a>
-                <hr id="hrProjecten">
+            <li id="nav-projecten"><a href="./projecten.php">Projecten</a>
+                <hr id="hr-projecten">
             </li>
-            <li id="navAbout"><a href="./about.php">About/CV</a>
-                <hr id="hrAbout">
+            <li id="nav-about"><a href="./about.php">About/CV</a>
+                <hr id="hr-about">
             </li>
-            <li id="navContact"><a href="./contact.php">Contact</a>
-                <hr id="hrContact">
+            <li id="nav-contact"><a href="./contact.php">Contact</a>
+                <hr id="hr-contact">
             </li>
         </ul>
     </navbar>
-    <mainBox>
-        <contactBox>
-            <div id="title">Neem contact op</div>
-            <form action="db.php" method="post">
+    <main-box>
+        <contact-box>
+            <mail-animation></mail-animation>
+            <form action="db.php" method="post" id="form">
+                <div id="title">Neem contact op</div>
                 <input type="text" name="voornaam" id="voornaam" class="text" placeholder="Voornaam" required>
                 <input type="text" name="achternaam" id="achternaam" class="text" placeholder="Achternaam" required>
                 <input type="email" name="email" id="email" class="text" placeholder="Email" required>
@@ -51,10 +55,10 @@
                 <input type="text" name="bedrijf" id="bedrijf" class="text" placeholder="Bedrijf *optioneel*">
                 <label for="bericht">Bericht</label>
                 <textarea name="bericht" id="bericht" maxlength="300" required></textarea>
-                <input type="submit" name="verstuur" value="Verstuur" id="verstuur">
+                <input type="submit" name="verstuur" value="Verstuur" id="verstuur" onclick="animation()">
             </form>
-        </contactBox>
-    </mainBox>
+        </contact-box>
+    </main-box>
 </body>
 
 </html>

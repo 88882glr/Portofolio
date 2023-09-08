@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About</title>
 
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/about.css">
@@ -20,58 +20,56 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.3/lottie_svg.min.js"></script>
 </head>
 
-<body>
+<body onload="experienceAnimation()">
     <navbar>
         <ul>
-            <li id="navHome"><a href="../index.php">Home</a>
-                <hr id="hrHome">
+            <li id="nav-home"><a href="../index.php">Home</a>
+                <hr id="hr-home">
             </li>
-            <li id="navProjecten"><a href="./projecten.php">Projecten</a>
-                <hr id="hrProjecten">
+            <li id="nav-projecten"><a href="./projecten.php">Projecten</a>
+                <hr id="hr-projecten">
             </li>
-            <li id="navAbout"><a href="./about.php">About/CV</a>
-                <hr id="hrAbout">
+            <li id="nav-about"><a href="./about.php">About/CV</a>
+                <hr id="hr-about">
             </li>
-            <li id="navContact"><a href="./contact.php">Contact</a>
-                <hr id="hrContact">
+            <li id="nav-contact"><a href="./contact.php">Contact</a>
+                <hr id="hr-contact">
             </li>
         </ul>
     </navbar>
-    <mainBox>
-        <topBox>
-            <leftBox>
-                <div id="name">Tom van der Hoeven</div>
-                <div id="studie">Software Developer</div>
-                <div id="myDesc">Ik studeer aan het Grafisch Lyceum Rotterdam en volg daar de opleiding Software
+    <main-box>
+        <top-box>
+            <left-box>
+                <name>Tom van der Hoeven</name>
+                <studie>Software Developer</studie>
+                <my-desc>Ik studeer aan het Grafisch Lyceum Rotterdam en volg daar de opleiding Software
                     Developer. Hier leer ik verschillende programmeertalen en methodes die ik wil gaan gebruiken
                     in mijn toekomstige werkomgeving. Tijdens mijn studie heb ik verschillende <a href="./projecten.php"
-                        class="textLink">projecten</a> gemaakt
+                        class="text-link">projecten</a> gemaakt
                     waarin ik mijn vaardigheden laat zien. Als u contact met mij wilt maken kan dat <a
-                        href="./contact.php" class="textLink">hier</a>.
-                </div>
-                <a href="../media/cv.pdf" download="CV" id="downloadButton">
-                    <div class="downloadAnimation"></div>Download CV
+                        href="./contact.php" class="text-link">hier</a>.
+                </my-desc>
+                <a href="../media/cv.pdf" download="CV" id="download-button">
+                    <download-animation></download-animation>Download CV
                 </a>
-
-            </leftBox>
-            <rightBox>
+            </left-box>
+            <right-box>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/rfscVS0vtbw?si=YZC8Mr7a0FSEWFLl"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
-            </rightBox>
-        </topBox>
-        <bottomBox>
-            <div class="title">Ervaringen</div>
-            <div id="expDesc">Ik heb tot nu toe 1 jaar ervaring met coderen. Daarnaast heb ik ruime ervaring met het
+            </right-box>
+        </top-box>
+        <bottom-box>
+            <heading>Ervaringen</heading>
+            <exp-desc>Ik heb tot nu toe 1 jaar ervaring met coderen. Daarnaast heb ik ruime ervaring met het
                 werken met computers en kan ik goed samenwerken met mijn collega's. Hieronder staan de programmeertalen
-                waarmee ik heb gewerkt.</div>
-
-            <div id="myExperiences">
-                <div class="title" id="titleTalen">Programmeertalen</div>
-            </div>
-        </bottomBox>
-    </mainBox>
+                waarmee ik heb gewerkt.</exp-desc>
+            <my-experiences>
+                <title-talen>Programmeertalen</title-talen>
+            </my-experiences>
+        </bottom-box>
+    </main-box>
 </body>
 
 </html>

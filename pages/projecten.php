@@ -17,7 +17,7 @@
     <script src="../js/projecten.js"></script>
 </head>
 
-<body onload="projectenAnimatie();">
+<body onload="projectAnimation();">
     <?php
     require 'db.php';
 
@@ -30,54 +30,72 @@
 
     foreach ($rows as $row) {
         $title = $row['title'];
-        $description = $row['description'];
+        $descr = $row['descr'];
         $link = $row['link'];
         $projectCollab = $row['collaborators'];
+        $taal1 = $row['taal1'];
+        $taal2 = $row['taal2'];
+        $taal3 = $row['taal3'];
+        $taal4 = $row['taal4'];
     }
     ?>
     <navbar>
         <ul>
-            <li id="navHome"><a href="../index.php">Home</a>
-                <hr id="hrHome">
+            <li id="nav-home"><a href="../index.php">Home</a>
+                <hr id="hr-home">
             </li>
-            <li id="navProjecten"><a href="./projecten.php">Projecten</a>
-                <hr id="hrProjecten">
+            <li id="nav-projecten"><a href="./projecten.php">Projecten</a>
+                <hr id="hr-projecten">
             </li>
-            <li id="navAbout"><a href="./about.php">About/CV</a>
-                <hr id="hrAbout">
+            <li id="nav-about"><a href="./about.php">About/CV</a>
+                <hr id="hr-about">
             </li>
-            <li id="navContact"><a href="./contact.php">Contact</a>
-                <hr id="hrContact">
+            <li id="nav-contact"><a href="./contact.php">Contact</a>
+                <hr id="hr-contact">
             </li>
         </ul>
     </navbar>
-    <mainBox>
-        <div id="title">Mijn projecten</div>
-        <div id="subTitle">School projecten</div>
-        <div id="schoolProjecten">Voor mijn opleiding op het Grafisch Lyceum Rotterdam heb ik een aantal opdrachten
-            gemaakt die mij hebben geholpen met het leren van programmeertalen</div>
-        <div id="projecten">
+    <main-box>
+        <heading>Mijn projecten</heading>
+        <sub-title>School projecten</sub-title>
+        <school-projecten>Voor mijn opleiding op het Grafisch Lyceum Rotterdam heb ik een aantal opdrachten
+            gemaakt die mij hebben geholpen met het leren van programmeertalen</school-projecten>
+        <projecten>
             <?php foreach ($rows as $row) {
-                $img = base64_encode($row['img']); ?>
+                $img = base64_encode($row['img']);
+                $taal1 = base64_encode($row['taal1']);
+                $taal2 = base64_encode($row['taal2']);
+                $taal3 = base64_encode($row['taal3']);
+                $taal4 = base64_encode($row['taal4']); ?>
                 <project>
-                    <img loading="lazy" src="data:image/jpeg;base64,<?php echo $img; ?>" alt="ProjectImg"
-                        class="projectImg">
-                    <div class="projectTitle">
+                    <img loading="lazy" src="data:image/jpeg;base64,<?php echo $img; ?>" alt="Project-img"
+                        class="project-img">
+                    <project-title>
                         <?php echo $row["title"]; ?>
-                    </div>
-                    <div class="projectDesc">
-                        <?php echo $row["description"]; ?>
-                    </div>
-                    <a href="<?php echo $row["link"]; ?>" class="goToProject"><img src="../media/arrowBlack.svg" alt="arrow"
-                            id="arrowBlack"><img src="../media/arrowBlue.svg" alt="arrow" id="arrowBlue"></a>
-                    <div class="collab">
+                    </project-title>
+                    <project-desc>
+                        <?php echo $row["descr"]; ?>
+                    </project-desc>
+                    <a href="<?php echo $row["link"]; ?>" class="go-to-project" target="_blank"><img
+                            src="../media/arrowBlack.svg" alt="arrow" class="arrow-black"><img src="../media/arrowBlue.svg"
+                            alt="arrow" class="arrow-blue"></a>
+                    <collab>
                         <?php echo $row["collaborators"]; ?> Collaborators
-                    </div>
+                    </collab>
+                    <languages>
+                        <img loading="lazy" src="data:image/jpeg;base64,<?php echo $taal1; ?>" alt="Project-img"
+                            class="taal-img">
+                        <img loading="lazy" src="data:image/jpeg;base64,<?php echo $taal2; ?>" alt="Project-img"
+                            class="taal-img">
+                        <img loading="lazy" src="data:image/jpeg;base64,<?php echo $taal3; ?>" alt="Project-img"
+                            class="taal-img">
+                        <img loading="lazy" src="data:image/jpeg;base64,<?php echo $taal4; ?>" alt="Project-img"
+                            class="taal-img">
+                    </languages>
                 </project>
             <?php } ?>
-        </div>
-
-    </mainBox>
+            </div>
+    </main-box>
 </body>
 
 </html>

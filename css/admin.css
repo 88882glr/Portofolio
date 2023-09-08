@@ -1,0 +1,114 @@
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#taaktabel {
+    display: flex;
+    height: max-content;
+    width: max-content;
+    border: 1px solid black;
+    border-radius: 5px;
+    flex-direction: column;
+    position: relative;
+}
+
+td,
+th {
+    position: relative;
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+a {
+    color: black;
+    margin-top: 10px;
+    padding: 7px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+label {
+    margin-top: 10px;
+}
+
+#knop {
+    margin-top: 10px;
+    width: 100px;
+    cursor: pointer;
+}
+
+#links {
+    display: flex;
+    justify-content: space-between;
+    width: 380px;
+}
+
+.prullenbak {
+    position: absolute;
+    left: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.marginbutton {
+    margin: 10px 0 10px 0;
+    cursor: pointer;
+}
+
+flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50vw;
+}

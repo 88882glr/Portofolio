@@ -47,44 +47,60 @@ hr {
     border: none;
     transition: width 0.2s linear, background-color 0.2s linear;
     float: left;
+    cursor: pointer;
 }
 
-#navHome:hover>#hrHome {
+#nav-home:hover>#hr-home {
     background-color: #ff8080bd;
     width: 100%;
     float: right;
 }
 
-#navHome:hover>a {
+#nav-home:hover>a {
     color: #ff8080;
 }
 
-#navProjecten:hover>#hrProjecten {
+#nav-projecten:hover>#hr-projecten {
     background-color: #4d9bffbd;
     width: 100%;
     float: right;
 }
 
-#navProjecten:hover>a {
+#nav-projecten:hover>a {
     color: #4d9bffbd;
 }
 
-#navAbout:hover>#hrAbout {
+#nav-about:hover>#hr-about {
     background-color: #47af7dbd;
     width: 100%;
     float: right;
 }
 
-#navAbout:hover>a {
+#nav-about:hover>a {
     color: #47af7dbd;
 }
 
-#navContact:hover>#hrContact {
+#nav-contact:hover>#hr-contact {
     background-color: #6c55e1bd;
     width: 100%;
     float: right;
 }
 
-#navContact:hover>a {
+#nav-contact:hover>a {
     color: #6c55e1bd;
+}
+
+@media only screen and (max-width:1245px) {
+
+    ul li a::before,
+    ul li a::after {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    navbar ul {
+        margin: 0 15px 0 15px;
+    }
 }

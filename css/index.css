@@ -6,16 +6,16 @@ body {
 }
 
 
-#navHome a {
+#nav-home a {
     color: #ff8080bd;
 }
 
-#hrHome {
+#hr-home {
     background-color: #ff8080bd;
     width: 100%;
 }
 
-mainBox {
+main-box {
     display: flex;
     width: 100%;
     max-width: 1200px;
@@ -29,34 +29,38 @@ profile {
     justify-content: space-between;
     align-items: center;
     height: 850px;
+    width: 100%;
     max-width: 1200px;
 }
 
-leftBox {
+left-box {
     display: flex;
     flex-direction: column;
     height: 400px;
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
+
 }
 
-rightBox {
+right-box {
     position: relative;
     display: flex;
     height: 400px;
-    width: 540px;
+    width: 100%;
+    max-width: 540px;
 }
 
-#profielFoto {
+#profiel-foto {
     position: absolute;
     height: 400px;
     width: 400px;
     top: 0;
     left: 0;
-    animation: moveImg 1s forwards;
+    animation: move-img 0.9s ease-in-out forwards;
 
 }
 
-#border {
+border {
     position: absolute;
     height: 397px;
     width: 397px;
@@ -64,10 +68,10 @@ rightBox {
     left: 0;
     z-index: -1;
     border: 3px solid #ff8080bd;
-    animation: moveBorder 1s forwards;
+    animation: move-border 0.9s ease-in-out forwards;
 }
 
-@keyframes moveBorder {
+@keyframes move-border {
     from {
         top: 0;
         left: 0;
@@ -79,7 +83,7 @@ rightBox {
     }
 }
 
-@keyframes moveImg {
+@keyframes move-img {
     from {
         top: 0;
         left: 0;
@@ -91,37 +95,33 @@ rightBox {
     }
 }
 
-#introductie {
-    width: 40vw;
-}
-
-.textLink {
+.text-link {
     text-decoration: none;
     color: #ff8080bd;
 }
 
-#title {
+header {
     margin: 0 0 10px 0;
     font-size: 45px;
     margin-top: 50px;
     transform: translateX(-100px);
     animation-name: moveText;
-    animation: moveText 1s ease forwards;
+    animation: move-text 1s ease forwards;
     opacity: 0;
 }
 
-#introductie {
+introductie {
     width: 550px;
     margin: 10px 0 20px 0;
     color: #828282;
     line-height: 27px;
     margin-left: 5px;
     transform: translateX(-100px);
-    animation: moveText 0.8s ease 0.2s forwards;
+    animation: move-text 0.8s ease 0.2s forwards;
     opacity: 0;
 }
 
-@keyframes moveText {
+@keyframes move-text {
     from {
         transform: translateX(-100px);
         opacity: 0;
@@ -130,5 +130,15 @@ rightBox {
     to {
         opacity: 1;
         transform: translateX(0);
+    }
+}
+
+@media only screen and (max-width:1245px) {
+    profile {
+        flex-direction: column;
+    }
+
+    right-box {
+        max-width: 770px;
     }
 }
